@@ -85,4 +85,9 @@ class FormController extends Controller
     {
         return view('authentication.login');
     }
+
+    public function dashboard()
+    {
+        return view('dashboard');
+    }
 }

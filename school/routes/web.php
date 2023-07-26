@@ -24,5 +24,11 @@ Route::post('/registration', [FormController::class, 'registration'])->name('reg
 
 Route::get('/login', [FormController::class, 'login'])->name('login');
 Route::post('/dashboard', [FormController::class, 'authenticate'])->name('loginSubmit');
+
+Route::middleware(['auth'])->group(function () {
+    // Protected route
+    Route::get('/dashboard', [FormController::class, 'dashboard'])->name('dashboard');
 Route::get('/logout', [FormController::class, 'logout'])->name('logout');
+});
+
 
