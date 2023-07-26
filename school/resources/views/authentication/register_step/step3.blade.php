@@ -12,15 +12,11 @@
 			</div>
 			<div class="form-group">
 				<label>Password*</label>
-				   <div class="col-sm-12">
-					<input type="password" class="form-control" name="Password"/>
-				   </div>
+				<input type="password" class="form-control" name="password" />
 			</div>
 			<div class="form-group">
 				<label>Confirm Password</label>
-				<div class="col-sm-12">
-					<input type="password" class="form-control" name="password_confirmation"/>
-				</div>
+				<input type="password" class="form-control" name="confirm_password" />
 			</div>
 			
 			<div class="form-group">
