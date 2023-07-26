@@ -16,31 +16,31 @@
 							<div class="login-title">
 								<h2 class="text-center text-primary">Login To COP ASSISTANT</h2>
 							</div>
-															@if ($errors->any())
-									<div class="alert alert-danger">
-										<ul>
-											@foreach ($errors->all() as $error)
-												<li>{{ $error }}</li>
-											@endforeach
-										</ul>
-									</div>
-								@endif
+							@if ($errors->any())
+							<div class="alert alert-danger">
+								<ul>
+									@foreach ($errors->all() as $error)
+										<li>{{ $error }}</li>
+									@endforeach
+								</ul>
+							</div>
+						@endif
 
-							<form class="tab-wizard2 wizard-circle wizard"  method="POST" action="#">
+							<form class="tab-wizard2 wizard-circle wizard"  method="POST" action="{{route('loginSubmit')}}"> @csrf
 
 								<div class="form-group">
 									<label>
 										Church Name:
 									</label>
 								<div class="col-sm-12">
-									<input type="text" class="form-control" name="church_name"/>
+									<input type="text" class="form-control" name="CName"/>
 								</div>
 								</div>
 								 
 								<div class="form-group">
 									<label>Church Code:</label>
 									<div class="col-sm-12">
-										<input type="text" class="form-control"  name="church_code"/>
+										<input type="text" class="form-control"  name="CCode"/>
 									</div>
 									</div>
 

@@ -21,3 +21,8 @@ Route::get('/', function () {
 Route::get('/register', [FormController::class, 'register'])->name('register');
 
 Route::post('/registration', [FormController::class, 'registration'])->name('registration');
+
+Route::get('/login', [FormController::class, 'login'])->name('login');
+Route::post('/dashboard', [FormController::class, 'authenticate'])->name('loginSubmit');
+Route::get('/logout', [FormController::class, 'logout'])->name('logout');
+

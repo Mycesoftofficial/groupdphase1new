@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use App\Models\Registration; // Add this line to import the Registration model
+use Illuminate\Support\Facades\Auth;
 
 class FormController extends Controller
 {
@@ -44,6 +45,44 @@ class FormController extends Controller
         ]);
 
         // Redirect to a success page or perform any other actions you need
-        return redirect()->back()->with('success', 'Registration successful!');
+        return view('dashboard');
+    }
+
+    public function authenticate(Request $request)
+    {
+       // Validation (Add your validation rules here)
+       $request->validate([
+        'CName' => 'required',
+        'CCode' => 'required',
+    ]);
+
+    // Get the credentials from the request
+    $credentials = $request->only('CName', 'CCode');
+
+    // Check if the user exists in the database
+    $user = Registration::where('CName', $credentials['CName'])
+        ->where('CCode', $credentials['CCode'])
+        ->first();
+
+    // If the user does not exist or the password is incorrect, return an error
+    if (!$user) {
+        return redirect()->route('login')->withErrors('Invalid credentials')->withInput();
+    }
+
+    // Log in the user manually
+    Auth::login($user);
+
+    // Redirect the user to the intended page after successful login
+    return view('dashboard');
+    }
+
+    public function login()
+    {
+        return view('authentication.login');
+    }
+
+    public function logout()
+    {
+        return view('authentication.login');
     }
 }
