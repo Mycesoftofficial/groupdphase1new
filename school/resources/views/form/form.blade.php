@@ -61,27 +61,13 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>First Name :</label>
+                                                <label>RecYEAR:</label>
                                                 <input type="text" class="form-control" />
                                             </div>
                                         </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Last Name :</label>
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Email Address :</label>
-                                                <input type="email" class="form-control" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Phone Number :</label>
+                                                <label> RecMonth:</label>
                                                 <input type="text" class="form-control" />
                                             </div>
                                         </div>
@@ -89,23 +75,32 @@
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Select City :</label>
-                                                <select class="custom-select form-control">
-                                                    <option value="">Select City</option>
-                                                    <option value="Amsterdam">India</option>
-                                                    <option value="Berlin">UK</option>
-                                                    <option value="Frankfurt">US</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Date of Birth :</label>
+                                                <label>RecDate:</label>
                                                 <input
                                                     type="text"
                                                     class="form-control date-picker"
                                                     placeholder="Select Date"
                                                     />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>CMemM:</label>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>CMemF:</label>
+                                                <input type="text" class="form-control" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label>TCMem:</label>
+                                                <input type="text" class="form-control" />
                                             </div>
                                         </div>
                                     </div>
@@ -114,22 +109,123 @@
                                 <h5>Job Status</h5>
                                 <section>
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Job Title :</label>
-                                                <input type="text" class="form-control" />
+                                                <label>TMale</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Company Name :</label>
-                                                <input type="text" class="form-control" />
+                                                <label>TFem</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="col-md-12">
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Job Description :</label>
-                                                <textarea class="form-control"></textarea>
+                                                <label>TTot</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>YMale</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>YFem</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>YTot</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>YotMM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>YotMF</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>YotMT</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>OTAM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>OTAF</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>OTAT</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label>TAM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>OM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>M</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>MW</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>RM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>RMW</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
                                     </div>
@@ -138,36 +234,128 @@
                                 <h5>Interview</h5>
                                 <section>
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Interview For :</label>
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Interview Type :</label>
-                                                <select class="form-control">
-                                                    <option>Normal</option>
-                                                    <option>Difficult</option>
-                                                    <option>Hard</option>
-                                                </select>
+                                                <label>ED</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Interview Date :</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control date-picker"
-                                                    placeholder="Select Date"
-                                                    />
+                                                <label>D</label>
+                                                <input type="text" class="form-control">
                                             </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Interview Time :</label>
-                                                <input
-                                                    class="form-control time-picker"
-                                                    placeholder="Select time"
-                                                    type="text"
-                                                    />
+                                                <label>DC</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>LL</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>OR1</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>ASW</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>GS</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>HUM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>MPWD</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>NC</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>HS</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>OAHS</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label>TE</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>YA</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>OA</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>TT</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>T</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>YAO</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>OAA</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
                                     </div>
@@ -176,184 +364,633 @@
                                 <h5>Remark</h5>
                                 <section>
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Behaviour :</label>
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Confidance</label>
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Result</label>
-                                                <select class="form-control">
-                                                    <option>Select Result</option>
-                                                    <option>Selected</option>
-                                                    <option>Rejected</option>
-                                                </select>
+                                                <label>TTT</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Comments</label>
-                                                <textarea class="form-control"></textarea>
+                                                <label>BW</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <label>BBF</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>AD</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>HCC</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>HCM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>HCF</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>HCTT</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>HCMM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>BS</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>BST</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>MBS</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label>MBSH</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>PBR</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>ACA</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>AMA</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>ACAA</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>ALS</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>NCC</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
                                     </div>
                                 </section>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="pd-20 card-box mb-30">
-                        <div class="clearfix">
-                            <h4 class="text-blue h4">Step wizard vertical</h4>
-                            <p class="mb-30">jQuery Step wizard</p>
-                        </div>
-                        <div class="wizard-content">
-                            <form class="tab-wizard wizard-circle wizard vertical">
-                                <h5>Personal Info</h5>
-                                <section>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>First Name :</label>
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Last Name :</label>
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Email Address :</label>
-                                                <input type="email" class="form-control" />
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Phone Number :</label>
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Select City :</label>
-                                                <select class="custom-select form-control">
-                                                    <option value="">Select City</option>
-                                                    <option value="Amsterdam">India</option>
-                                                    <option value="Berlin">UK</option>
-                                                    <option value="Frankfurt">US</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>Date of Birth :</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control date-picker"
-                                                    placeholder="Select Date"
-                                                    />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <!-- Step 2 -->
+                                {{-- step 5 --}}
+
                                 <h5>Job Status</h5>
                                 <section>
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Job Title :</label>
-                                                <input type="text" class="form-control" />
+                                                <label>NCR</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Company Name :</label>
-                                                <input type="text" class="form-control" />
+                                                <label>EVNC</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="col-md-12">
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Job Description :</label>
-                                                <textarea class="form-control"></textarea>
+                                                <label>NCCH</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>MIW</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>WAA</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>WCPM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>AA4WCPM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>HGP</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>TOM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>BMM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>ACJS</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>CDD</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label>CWC</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>CBHS</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>CBW</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>CMT</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>CAND</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>CTTRI</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
                                     </div>
                                 </section>
-                                <!-- Step 3 -->
-                                <h5>Interview</h5>
+
+                                {{-- step 6 --}}
+
+                                <h5>Job Status</h5>
                                 <section>
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Interview For :</label>
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Interview Type :</label>
-                                                <select class="form-control">
-                                                    <option>Normal</option>
-                                                    <option>Difficult</option>
-                                                    <option>Hard</option>
-                                                </select>
+                                                <label>CTTRO</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Interview Date :</label>
-                                                <input
-                                                    type="text"
-                                                    class="form-control date-picker"
-                                                    placeholder="Select Date"
-                                                    />
+                                                <label>Birth</label>
+                                                <input type="text" class="form-control">
                                             </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Interview Time :</label>
-                                                <input
-                                                    class="form-control time-picker"
-                                                    placeholder="Select time"
-                                                    type="text"
-                                                    />
+                                                <label>CDeath</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>NClassesW</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>NClassesM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>NClassesY</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>NClassesY</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>NClassesE</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>NClassesC</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>AverageAW</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>AverageAM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>AverageAY</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label>AverageAE</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>AverageAC</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>VisitMW</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>VisitMM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>VisitMY</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>VisitME</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
                                     </div>
                                 </section>
-                                <!-- Step 4 -->
-                                <h5>Remark</h5>
+                                {{-- step 7 --}}
+                                <h5>Job Status</h5>
                                 <section>
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Behaviour :</label>
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Confidance</label>
-                                                <input type="text" class="form-control" />
-                                            </div>
-                                            <div class="form-group">
-                                                <label>Result</label>
-                                                <select class="form-control">
-                                                    <option>Select Result</option>
-                                                    <option>Selected</option>
-                                                    <option>Rejected</option>
-                                                </select>
+                                                <label>VisitMC</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-4 col-sm-12">
                                             <div class="form-group">
-                                                <label>Comments</label>
-                                                <textarea class="form-control"></textarea>
+                                                <label>56HUM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <label>56MP</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>57HUM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>57MP</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>58HUM</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>58MP</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>Disab</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>60a</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>60b</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>60c</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>60d</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label>60e</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>60f</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>60g</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>61a</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>61b</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>61c</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+
+                                {{-- step 8 --}}
+
+                                <h5>Job Status</h5>
+                                <section>
+                                    <div class="row">
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <label>61d</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <label>61di</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                            <div class="form-group">
+                                                <label>61dii</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>61diii</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>61div</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>61e</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>61fy</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>61fn</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>62a</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label>62b</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>62c</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="form-group">
+                                                <label>62d</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-sm-12">
+                                            <div class="form-group">
+                                                <label>62e</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>62f</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>62g</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>62h</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>62oth</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="form-group">
+                                                <label>ChurchID</label>
+                                                <input type="text" class="form-control">
                                             </div>
                                         </div>
                                     </div>
