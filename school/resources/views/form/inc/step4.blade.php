@@ -2,126 +2,126 @@
     <div class="row">
         <div class="col-md-4 col-sm-12">
             <div class="form-group">
-                <label>TTT</label>
-                <input type="text" class="form-control">
+                <label for="TTT">TTT</label>
+                <input type="text" class="form-control" name="TTT" id="TTT">
             </div>
         </div>
         <div class="col-md-4 col-sm-12">
             <div class="form-group">
-                <label>BW</label>
-                <input type="text" class="form-control">
+                <label for="BW">BW</label>
+                <input type="text" class="form-control" name="BW" id="BW">
             </div>
         </div>
         <div class="col-md-4 col-sm-12">
             <div class="form-group">
-                <label>BBF</label>
-                <input type="text" class="form-control">
+                <label for="BBF">BBF</label>
+                <input type="text" class="form-control" name="BBF" id="BBF">
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-3 col-sm-12">
             <div class="form-group">
-                <label>AD</label>
-                <input type="text" class="form-control">
+                <label for="AD">AD</label>
+                <input type="text" class="form-control" name="AD" id="AD">
             </div>
         </div>
         <div class="col-md-3 col-sm-12">
             <div class="form-group">
-                <label>HCC</label>
-                <input type="text" class="form-control">
+                <label for="HCC">HCC</label>
+                <input type="text" class="form-control" name="HCC" id="HCC">
             </div>
         </div>
         <div class="col-md-3 col-sm-12">
             <div class="form-group">
-                <label>HCM</label>
-                <input type="text" class="form-control">
+                <label for="HCM">HCM</label>
+                <input type="text" class="form-control" name="HCM" id="HCM">
             </div>
         </div>
         <div class="col-md-3 col-sm-12">
             <div class="form-group">
-                <label>HCF</label>
-                <input type="text" class="form-control">
+                <label for="HCF">HCF</label>
+                <input type="text" class="form-control" name="HCF" id="HCF">
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6 col-sm-12">
             <div class="form-group">
-                <label>HCTT</label>
-                <input type="text" class="form-control">
+                <label for="HCTT">HCTT</label>
+                <input type="text" class="form-control" name="HCTT" id="HCTT">
             </div>
         </div>
         <div class="col-md-6 col-sm-12">
             <div class="form-group">
-                <label>HCMM</label>
-                <input type="text" class="form-control">
+                <label for="HCMM">HCMM</label>
+                <input type="text" class="form-control" name="HCMM" id="HCMM">
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6 col-sm-12">
             <div class="form-group">
-                <label>BS</label>
-                <input type="text" class="form-control">
+                <label for="BS">BS</label>
+                <input type="text" class="form-control" name="BS" id="BS">
             </div>
         </div>
         <div class="col-md-3 col-sm-12">
             <div class="form-group">
-                <label>BST</label>
-                <input type="text" class="form-control">
+                <label for="BST">BST</label>
+                <input type="text" class="form-control" name="BST" id="BST">
             </div>
         </div>
         <div class="col-md-3 col-sm-12">
             <div class="form-group">
-                <label>MBS</label>
-                <input type="text" class="form-control">
+                <label for="MBS">MBS</label>
+                <input type="text" class="form-control" name="MBS" id="MBS">
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12 col-sm-12">
             <div class="form-group">
-                <label>MBSH</label>
-                <input type="text" class="form-control">
+                <label for="MBSH">MBSH</label>
+                <input type="text" class="form-control" name="MBSH" id="MBSH">
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-md-2 col-sm-12">
             <div class="form-group">
-                <label>PBR</label>
-                <input type="text" class="form-control">
+                <label for="PBR">PBR</label>
+                <input type="text" class="form-control" name="PBR" id="PBR">
             </div>
         </div>
         <div class="col-md-2 col-sm-12">
             <div class="form-group">
-                <label>ACA</label>
-                <input type="text" class="form-control">
+                <label for="ACA">ACA</label>
+                <input type="text" class="form-control" name="ACA" id="ACA">
             </div>
         </div>
         <div class="col-md-2 col-sm-12">
             <div class="form-group">
-                <label>AMA</label>
-                <input type="text" class="form-control">
+                <label for="AMA">AMA</label>
+                <input type="text" class="form-control" name="AMA" id="AMA">
             </div>
         </div>
         <div class="col-md-2 col-sm-12">
             <div class="form-group">
-                <label>ACAA</label>
-                <input type="text" class="form-control">
+                <label for="ACAA">ACAA</label>
+                <input type="text" class="form-control" name="ACAA" id="ACAA">
             </div>
         </div>
         <div class="col-md-2 col-sm-12">
             <div class="form-group">
-                <label>ALS</label>
-                <input type="text" class="form-control">
+                <label for="ALS">ALS</label>
+                <input type="text" class="form-control" name="ALS" id="ALS">
             </div>
         </div>
         <div class="col-md-2 col-sm-12">
             <div class="form-group">
-                <label>NCC</label>
-                <input type="text" class="form-control">
+                <label for="NCC">NCC</label>
+                <input type="text" class="form-control" name="NCC" id="NCC">
             </div>
         </div>
     </div>
