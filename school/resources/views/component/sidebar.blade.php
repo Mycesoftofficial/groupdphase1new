@@ -28,7 +28,7 @@
                         <span class="mtext">Data Entry</span>
                     </a>
                     <ul class="submenu">
-                        <li><a href="form-basic.html">Form Basic</a></li>
+                        <li><a href="{{route('form')}}">Form Entry</a></li>
                         <li>
                             <a href="advanced-components.html">Advanced Components</a>
                         </li>

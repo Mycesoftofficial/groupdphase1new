@@ -90,4 +90,9 @@ class FormController extends Controller
     {
         return view('dashboard');
     }
+
+    public function form()
+    {
+        return view('form.form');
+    }
 }
