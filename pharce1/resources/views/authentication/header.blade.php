@@ -9,7 +9,7 @@
         </div>
         <div class="login-menu">
             <ul>
-                <li><a href="{{route('login')}}">Login</a></li>
+                <li><a href="">Login</a></li>
             </ul>
         </div>
         

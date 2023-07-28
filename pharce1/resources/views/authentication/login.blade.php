@@ -26,7 +26,7 @@
 							</div>
 						@endif
 
-							<form class="tab-wizard2 wizard-circle wizard"  method="POST" action="{{route('loginSubmit')}}"> @csrf
+							<form class="tab-wizard2 wizard-circle wizard"  method="POST" action=""> @csrf
 
 								<div class="form-group">
 									<label>
