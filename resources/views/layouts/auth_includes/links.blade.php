@@ -57,6 +57,9 @@
     />
     <link rel="stylesheet" type="text/css" href="{{asset('assets/vendors/styles/style.css')}}" />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
         async
@@ -90,6 +93,8 @@
         })(window, document, "script", "dataLayer", "GTM-NXZMQSS");
     </script>
     <!-- End Google Tag Manager -->
+
+   
 </head>
 
 
@@ -145,6 +150,9 @@
     />
     <link rel="stylesheet" type="text/css" href="vendors/styles/style.css" />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
         async
@@ -178,4 +186,6 @@
         })(window, document, "script", "dataLayer", "GTM-NXZMQSS");
     </script>
     <!-- End Google Tag Manager -->
+
+   
 </head>

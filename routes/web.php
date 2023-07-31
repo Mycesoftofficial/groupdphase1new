@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FormController;
+use App\Http\Controllers\LocalStatisticController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,7 @@ Route::get('/login', [FormController::class, 'login'])->name('login');
 Route::post('/dashboard', [FormController::class, 'authenticate'])->name('loginSubmit');
 Route::get('/dashboard', [FormController::class, 'dashboard'])->name('dashboard');
 Route::get('/form', [FormController::class, 'form'])->name('form');
+Route::post('/save-local-statistics', [LocalStatisticController::class, 'store'])->name('save.local.statistics');
 
 Route::middleware(['auth'])->group(function () {
     // Protected route
