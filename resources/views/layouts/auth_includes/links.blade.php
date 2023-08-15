@@ -70,6 +70,9 @@
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2973766580778258"
         crossorigin="anonymous"
     ></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() {

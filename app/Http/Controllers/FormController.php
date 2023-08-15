@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
-use App\Models\Registration; // Add this line to import the Registration model
+use App\Models\Registration; 
+use App\Models\LocalStatistic;
 use Illuminate\Support\Facades\Auth;
 
 class FormController extends Controller
@@ -88,7 +89,11 @@ class FormController extends Controller
 
     public function dashboard()
     {
-        return view('dashboard');
+        $totalMales = LocalStatistic::sum('TMale');
+        $totalFemales = LocalStatistic::sum('TFem');
+        $totalRecords = LocalStatistic::count();
+        $recentReports = LocalStatistic::orderBy('created_at', 'desc')->take(5)->get();
+        return view('dashboard', compact('totalMales', 'totalFemales', 'totalRecords', 'recentReports'));
     }
 
     public function form()

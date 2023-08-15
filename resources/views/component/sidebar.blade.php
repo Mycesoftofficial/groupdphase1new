@@ -29,25 +29,15 @@
                     </a>
                     <ul class="submenu">
                         <li><a href="{{route('form')}}">Form Entry</a></li>
-                        <li>
-                            <a href="advanced-components.html">Advanced Components</a>
-                        </li>
-                        <li><a href="form-wizard.html">Form Wizard</a></li>
-                        <li><a href="html5-editor.html">HTML5 Editor</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
                     <a href="javascript:;" class="dropdown-toggle">
                         <i class="micon icon-copy fa fa-print" aria-hidden="true"></i>
-                       <span class="mtext">Print Report</span>
+                       <span class="mtext">Report</span>
                     </a>
                     <ul class="submenu">
-                        <li><a href="form-basic.html">Form Basic</a></li>
-                        <li>
-                            <a href="advanced-components.html">Advanced Components</a>
-                        </li>
-                        <li><a href="form-wizard.html">Form Wizard</a></li>
-                        <li><a href="html5-editor.html">HTML5 Editor</a></li>
+                        <li><a href="{{route('report')}}">Generate Report</a></li>
                     </ul>
                 </li>
             </ul>
