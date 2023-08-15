@@ -37,29 +37,29 @@
             </tr>
         </thead>
         <tbody>
-            @foreach ($reports as $singleReport) 
+            @foreach ($reports as $singleReport)
             <tr>
                 <th scope="row">1</th>
                 <td>Males...</td>
-                <td>{{ $singleReport->RecYear }}</td>
-                <td>{{ $singleReport->RecYear }}</td>
-                <td>{{ $singleReport->RecYear }}</td>
+                  <td>{{ $singleReport->RecMonth }}</td>
+                    <td>{{ $singleReport->RecMonth }}</td>
+                    <td>{{ $singleReport->RecMonth }}</td>
                 
             </tr>
             <tr>
                 <th scope="row">2</th>
                 <td>Females...</td>
-                <td>{{ $singleReport->RecYear }}</td>
-                <td>{{ $singleReport->RecYear }}</td>
-                <td>{{ $singleReport->RecYear }}</td>
+                    <td>{{ $singleReport->RecMonth }}</td>
+                    <td>{{ $singleReport->RecMonth }}</td>
+                    <td>{{ $singleReport->RecMonth }}</td>
                 
             </tr>
             <tr>
                 <th scope="row">3</th>
                 <td>Total(A)...</td>
-                <td>{{ $singleReport->RecYear }}</td>
-                <td>{{ $singleReport->RecYear }}</td>
-                <td>{{ $singleReport->RecYear }}</td>
+                    <td>{{ $singleReport->RecMonth }}</td>
+                    <td>{{ $singleReport->RecMonth }}</td>
+                    <td>{{ $singleReport->RecMonth }}</td>
                 
             </tr>
             @endforeach

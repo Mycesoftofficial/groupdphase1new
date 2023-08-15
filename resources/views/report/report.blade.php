@@ -49,10 +49,10 @@
 
                                             <div class="col-md-9">
                                                 <div class="form-group">
-                                                    <label>Date of Birth :</label>
+                                                    <label>Search By Exact Date :</label>
                                                     <input
                                                         type="text"
-                                                        name="RecDate"
+                                                        name="CreatedAt"
                                                         id="state"
                                                         class="form-control date-picker"
                                                         placeholder="Select Date"
@@ -74,10 +74,10 @@
 						
 						
                     </div>
-					@php
-								$selectedDate = $selectedDate ?? old('RecDate');
+						@php
+								$selectedDate = $selectedDate ?? old('CreatedAt');
 						@endphp
-						@if ($reports && count($reports) > 0)
+						@if (count($reports) > 0)
 								<div class="card-box pb-10">
 									<div class="h5 pd-20 mb-0">Generated Report</div>
 									<table class="data-table table nowrap">
@@ -126,7 +126,8 @@
 								</div>
 						@else
 								<p>No reports found for {{ $selectedDate }}. Please select a date and click the search button to generate the report.</p>
-							@endif
+						@endif
+							
 						
 						<!-- content_to_print.blade.php -->
 
@@ -157,22 +158,21 @@
 
 		<script>
 			const previewButtons = document.querySelectorAll(".btn-preview");
-		
-			function openPreviews(reportIds, selectedDate) {
-				reportIds.forEach(reportId => {
-					const previewURL = `{{ route('preview.report', ['reportId' => 'REPLACE_REPORT_ID', 'selectedDate' => 'REPLACE_SELECTED_DATE']) }}`;
-					const actualURL = previewURL.replace('REPLACE_REPORT_ID', reportId).replace('REPLACE_SELECTED_DATE', selectedDate);
-					window.open(actualURL, '_blank');
-				});
-			}
-		
-			previewButtons.forEach(previewButton => {
-				previewButton.addEventListener("click", () => {
-					const reportIds = Array.from(previewButtons).map(btn => btn.getAttribute('data-report-id'));
-					const selectedDate = previewButton.getAttribute('data-selected-date');
-					openPreviews(reportIds, selectedDate);
-				});
-			});
+
+function openPreview(reportId, selectedDate) {
+    const previewURL = `{{ route('preview.report', ['reportId' => 'REPLACE_REPORT_ID', 'selectedDate' => 'REPLACE_SELECTED_DATE']) }}`;
+    const actualURL = previewURL.replace('REPLACE_REPORT_ID', reportId).replace('REPLACE_SELECTED_DATE', selectedDate);
+    window.open(actualURL, '_blank');
+}
+
+previewButtons.forEach(previewButton => {
+    previewButton.addEventListener("click", () => {
+        const reportId = previewButton.getAttribute('data-report-id');
+        const selectedDate = previewButton.getAttribute('data-selected-date');
+        openPreview(reportId, selectedDate);
+    });
+});
+
 		</script>
 		
 		

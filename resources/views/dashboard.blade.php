@@ -97,7 +97,7 @@
 										</div>
 									</div>
 								</td>
-								<td>{{ $report->RecDate }}</td>
+								<td>{{ $report->CreatedAt }}</td>
 
 								<td>{{ $report->RecYear }}</td>
 								

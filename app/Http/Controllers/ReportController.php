@@ -7,47 +7,55 @@ use App\Models\LocalStatistic;
 use Illuminate\Support\Facades\View;
 use PhpOffice\PhpWord\IOFactory;
 use PhpOffice\PhpWord\PhpWord;
-
+use Illuminate\Support\Carbon;
 
 class ReportController extends Controller
 {
     public function report(Request $request)
-    {
-        $selectedDate = $request->input('RecDate');
-        $reports = []; // Initialize $reports as an empty array
+    {       
+        $userEnteredDate = $request->input('CreatedAt');
 
-          // Check if a date is selected or not
-          if ($selectedDate) {
-            // Assuming your model has a 'date' column to store the date, you can query the data like this
-            $reports = LocalStatistic::where('RecDate', 'LIKE', $selectedDate . '%')->get();
+        $reports = [];
+    
+        // Validate and sanitize the user-entered date
+        try {
+            $parsedDate = Carbon::parse($userEnteredDate);
+        } catch (\Exception $e) {
+            // Handle invalid date input here
+            return redirect()->back()->withErrors(['CreatedAt' => 'Invalid date format'])->withInput();
         }
-
-        return view('report.report')->with('reports', $reports)->with('selectedDate', $selectedDate);
+    
+        // Format the parsed date for querying
+        $formattedDate = $parsedDate->format('Y-m-d');
+    
+        // Query records based on the formatted date
+        $reports = LocalStatistic::whereDate('created_at', $formattedDate)->get();
+    
+        return view('report.report', compact('reports', 'userEnteredDate'));
     }
-
-
+    
     public function download(Request $request)
     {
-        $selectedDate = $request->input('RecDate');
-    $reports = [];
-
-    // Create a new PhpWord instance
-    $phpWord = new PhpWord();
-
-    // Load the content from the view
-    $content = View::make('content_to_print', ['selectedDate' => $selectedDate, 'reports' => $reports])->render();
-
-    // Add the content to the Word document
-    $section = $phpWord->addSection();
-    $section->addHtml($content);
-
-    // Save the document to a temporary location
-    $filename = 'report_' . $selectedDate . '_generated.docx';
-    $tempFilePath = storage_path('app/' . $filename);
-    $phpWord->save($tempFilePath);
-
-    // Provide the document for download
-    return response()->download($tempFilePath, $filename)->deleteFileAfterSend();
+        $selectedDate = $request->input('CreatedAt');
+        $reports = [];
+    
+        // Create a new PhpWord instance
+        $phpWord = new PhpWord();
+    
+        // Load the content from the view
+        $content = View::make('content_to_print', ['selectedDate' => $selectedDate, 'reports' => $reports])->render();
+    
+        // Add the content to the Word document
+        $section = $phpWord->addSection();
+        $section->addHtml($content);
+    
+        // Save the document to a temporary location
+        $filename = 'report_' . $selectedDate . '_generated.docx';
+        $tempFilePath = storage_path('app/' . $filename);
+        $phpWord->save($tempFilePath);
+    
+        // Provide the document for download
+        return response()->download($tempFilePath, $filename)->deleteFileAfterSend();
     }
 
     public function previewReport($reportId, $selectedDate)
@@ -55,7 +63,7 @@ class ReportController extends Controller
         $report = LocalStatistic::findOrFail($reportId);
 
         // Fetch the relevant reports for the view (You need to adjust this logic)
-        $reports = LocalStatistic::where('RecDate', $selectedDate)->get();
+        $reports = LocalStatistic::whereDate('created_at', '=', $selectedDate)->get();
     
         return view('content_to_print', [
             'report' => $report,
@@ -63,11 +71,4 @@ class ReportController extends Controller
             'reports' => $reports,
         ]);
     }
-    
-
-  
-
-
-
-
 }
